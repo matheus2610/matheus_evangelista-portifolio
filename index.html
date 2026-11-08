@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Portfólio de Matheus Evangelista: cibersegurança, redes, infraestrutura e projetos." name="description"/>
+<meta content="#001123" name="theme-color"/>
+<title>Início | Matheus Evangelista</title>
+<link href="assets/images/favicon.png" rel="icon" type="image/png"/>
+<!-- CSS local: sem Tailwind CDN, Google Fonts ou fontes de ícones externas. -->
+<link href="css/base.css" rel="stylesheet"/>
+<link href="css/home.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet"/>
+<script defer="" src="js/main.js"></script>
+<script defer="" src="js/carousel.js"></script>
+<link href="index.html" hreflang="pt-BR" rel="alternate"/><link href="en/index.html" hreflang="en-US" rel="alternate"/><link href="es/index.html" hreflang="es-ES" rel="alternate"/></head>
+<body class="page-home">
+<!-- Cabeçalho: navegação idêntica nas quatro páginas. -->
+<header class="site-header" id="topo">
+<div class="container header-inner">
+<a aria-label="Matheus Evangelista — página inicial" class="brand" href="index.html">
+<span class="logo-wrap"><img alt="Marca MG" height="46" src="assets/images/logo.png" width="46"/></span>
+<span class="brand-name">Matheus Evangelista</span>
+</a>
+<nav aria-label="Navegação principal" class="site-nav" id="siteNav">
+<a aria-current="page" class="active" href="index.html">Início</a>
+<a href="exp.html">Experiência</a>
+<a href="projeto.html">Projetos</a>
+<a href="cursos.html">Certificações</a>
+<a href="https://scutiganimedes.netlify.app/" rel="noopener noreferrer" target="_blank">scutiganimedes</a>
+<a class="nav-contact-mobile" href="mailto:matheus2610.mge@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio">Contato</a>
+</nav><div aria-label="Selecionar idioma" class="language-switcher" role="group"><a aria-current="true" aria-label="Português (Brasil)" class="is-current" href="index.html" hreflang="pt-BR" lang="pt-BR" title="Português (Brasil)"><img alt="" height="18" src="assets/images/flags/br.svg" width="27"/></a><a aria-label="Español (España)" href="es/index.html" hreflang="es-ES" lang="es-ES" title="Español (España)"><img alt="" height="18" src="assets/images/flags/es.svg" width="27"/></a><a aria-label="English (United States)" href="en/index.html" hreflang="en-US" lang="en-US" title="English (United States)"><img alt="" height="18" src="assets/images/flags/us.svg" width="27"/></a></div>
+<a class="btn btn-navy header-contact" href="mailto:matheus2610.mge@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio">Contato</a>
+<button aria-controls="siteNav" aria-expanded="false" aria-label="Abrir menu de navegação" class="menu-toggle" data-menu-close="Fechar menu de navegação" data-menu-open="Abrir menu de navegação" id="menuToggle" type="button">
+<span></span><span></span><span></span>
+</button>
+</div>
+</header>
+<main>
+<!-- Carrossel: imagens em assets/images; controle em js/carousel.js. -->
+<section aria-label="Áreas de atuação" aria-roledescription="carrossel" class="hero" id="carrossel" tabindex="0">
+<div class="hero-track" id="heroTrack"><article aria-hidden="false" aria-label="Slide 1 de 3" class="hero-slide" role="group">
+<img alt="Ambiente de monitoramento de ameaças e SOC" fetchpriority="high" height="900" src="assets/images/hero-01.png" width="1600"/>
+<div class="hero-overlay"></div>
+<div class="container hero-copy"><p class="eyebrow">CYBERSECURITY</p><h1>Monitoramento de Ameaças em Tempo Real</h1><p class="hero-description">Operações de segurança, análise de eventos e resposta a incidentes em ambientes críticos.</p><a class="btn btn-wine" href="projeto.html">Ver projetos</a></div>
+</article>
+<article aria-hidden="true" aria-label="Slide 2 de 3" class="hero-slide" role="group">
+<img alt="Profissional operando sistemas de infraestrutura e servidores" height="900" loading="lazy" src="assets/images/hero-02.png" width="1600"/>
+<div class="hero-overlay"></div>
+<div class="container hero-copy"><p class="eyebrow">SECURITY ARCHITECTURE</p><h1>Arquitetura de Segurança</h1><p class="hero-description">Infraestrutura, redes, SIEM, EDR, WAF e microssegmentação para ambientes resilientes.</p><a class="btn btn-wine" href="exp.html">Conhecer experiência</a></div>
+</article>
+<article aria-hidden="true" aria-label="Slide 3 de 3" class="hero-slide" role="group">
+<img alt="Profissional em estação de desenvolvimento e segurança" height="900" loading="lazy" src="assets/images/hero-03.png" width="1600"/>
+<div class="hero-overlay"></div>
+<div class="container hero-copy"><p class="eyebrow">CYBERSECURITY</p><h1>Defesa Ativa e Pentest</h1><p class="hero-description">Análise de vulnerabilidades e endurecimento de perímetros de rede corporativa.</p><a class="btn btn-wine" href="projeto.html">Ver detalhes</a></div>
+</article></div>
+<button aria-label="Slide anterior" class="carousel-arrow carousel-prev" id="prevSlide" type="button"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></svg></button>
+<button aria-label="Próximo slide" class="carousel-arrow carousel-next" id="nextSlide" type="button"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></svg></button>
+<div aria-label="Navegação dos slides" class="carousel-dots" id="carouselDots"></div>
+</section>
+<!-- Apresentação pessoal. A imagem e o PDF são arquivos locais. -->
+<section class="about section" id="sobre">
+<div class="container about-layout">
+<div class="profile-picture"><img alt="Matheus Evangelista em ambiente externo" height="843" loading="lazy" src="assets/images/sobre-mim.jpg" width="1189"/></div>
+<div class="about-text"><h2 class="underlined-title">Sobre Mim</h2>
+<p>Possuo aproximadamente 5 anos de experiência com atividades relacionadas a GRC, desenvolvidas ao longo da minha atuação em infraestrutura, segurança de redes e cibersegurança em ambientes corporativos e MSSP. Minha experiência inclui aplicação de controles de segurança, adequação a requisitos de clientes, ISO 27001/27002 e LGPD, implementação de políticas de segurança, análise e mitigação de riscos, cumprimento de SLAs e participação em projetos de melhoria e conformidade de ambientes.</p>
+<div class="button-group"><a class="btn btn-navy" download="" href="assets/docs/cv-matheus-evangelista.pdf"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M5 17v4h14v-4"></path></svg> Download CV</a><a class="btn btn-outline" href="mailto:matheus2610.mge@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio">Falar com Matheus</a></div>
+</div>
+</div>
+</section>
+<!-- Destaques: atalhos para as páginas de experiência e projetos. -->
+<!-- Faixa visual entre Sobre Mim e Destaques Profissionais. --><div aria-hidden="true" class="section-divider-band"></div><section class="highlights section" id="destaques">
+<div class="container"><h2 class="section-center-title">Destaques Profissionais</h2>
+<div class="highlight-grid">
+<article class="highlight-block"><h3 class="highlight-heading"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="7"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg> Experiência Recente</h3>
+<div class="recent-position"><span class="date-chip">JUNHO 2026 – ATUALMENTE</span><h4>Analista de Cibersegurança</h4><p class="minor-title">ISH Tecnologia (Ambiente: SEFAZ)</p>
+<p>Atuação dedicada ao ambiente da SEFAZ, contribuindo para a segurança de aplicações, infraestrutura e serviços; monitoramento de APIs, servidores e ambientes containerizados (Harpia SIEM, Microsoft Sentinel, SentinelOne); investigação e resposta a incidentes; implementação de microssegmentação com Illumio; administração de políticas com Check Point; análises de vulnerabilidades baseadas em OWASP.</p>
+</div>
+<a class="text-link" href="exp.html">Ver toda experiência <svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="m5 12 14 0m-6-6 6 6-6 6"></path></svg></a>
+</article>
+<article class="highlight-block"><h3 class="highlight-heading"><svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><rect height="18" rx="2" width="18" x="3" y="3"></rect><path d="m9 8-4 4 4 4m6-8 4 4-4 4"></path></svg> Projetos em Destaque</h3>
+<div class="featured-project"><img alt="Computador exibindo dashboard de segurança" height="279" loading="lazy" src="assets/images/pro-dest.jpg" width="512"/>
+<div class="featured-copy"><h4>Scanner de Vulnerabilidades Web</h4><p>Projetei e construí um Scanner de Vulnerabilidades Web customizado, focado em identificar as principais ameaças...</p><div class="tag-list"><span>Python</span><span>BeautifulSoup</span><span>Docker Compose</span><span>Acunetix</span></div></div>
+</div>
+<a class="text-link" href="projeto.html">Ver todos os projetos <svg aria-hidden="true" class="icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="m5 12 14 0m-6-6 6 6-6 6"></path></svg></a>
+</article>
+</div>
+</div>
+</section>
+</main>
+<!-- Rodapé compartilhado: os links sociais são opcionais e não carregam recursos externos. -->
+<footer class="site-footer" id="contato">
+<div class="container footer-inner">
+<div class="footer-identity"><strong class="footer-brand">Matheus Evangelista</strong><p class="footer-description">Segurança da Informação · Redes · Infraestrutura · Cibersegurança</p></div>
+<nav aria-label="Redes sociais" class="footer-links">
+<a href="https://www.youtube.com/channel/UCP1l4vNImhBTgfHCsP5cdww" rel="noopener noreferrer" target="_blank">YouTube</a>
+<a href="https://www.linkedin.com/in/matheus-gomes-evangelista-aa76ba167/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a href="https://github.com/matheus2610?tab=repositories" rel="noopener noreferrer" target="_blank">GitHub</a>
+<a href="https://scutiganimedes.netlify.app/" rel="noopener noreferrer" target="_blank">Scutiganimedes</a>
+<a download href="assets/docs/cv-matheus-evangelista.pdf">CV</a>
+</nav>
+</div>
+<div class="container footer-bottom"><small>© <span data-current-year="">2026</span> Matheus Gomes Evangelista - <a href="mailto:matheus2610.mge@gmail.com">matheus2610.mge@gmail.com</a></small><a class="back-to-top" href="#topo">Voltar ao topo ↑</a></div>
+</footer>
+</body>
+</html>

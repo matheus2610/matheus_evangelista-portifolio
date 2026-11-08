@@ -1,0 +1,35 @@
+/* Página Experiência — linha do tempo e cartões com responsabilidades. */
+.page-experience .page-intro {margin-bottom:50px;}
+.experience-timeline {border-left:2px solid #dfe3e8;margin-left:7px;padding-left:28px;}
+.experience-item {position:relative;padding:0 0 42px;}
+.experience-item:last-child {padding-bottom:0;}
+.timeline-dot {position:absolute;width:12px;height:12px;border-radius:50%;background:#c6cbd2;border:2px solid var(--bg);top:9px;left:-35px;}
+.experience-item:first-child .timeline-dot {background:var(--navy);width:14px;height:14px;left:-36px;}
+.experience-heading {display:flex;gap:12px;align-items:baseline;justify-content:center;text-align:center;flex-wrap:wrap;width:100%;margin:0 0 18px;}
+.experience-heading h2 {color:var(--navy);font-weight:700;font-size:clamp(21px,2.35vw,29px);line-height:1.38;margin:0;}
+.experience-heading .job-role {color:#555a60;font-weight:700;}
+.role-divider {font-weight:400;color:#a8acb3;margin-inline:5px;}
+.experience-dates {font:600 14px/1.5 Arial,Helvetica,sans-serif;color:#6e7987;}
+.experience-panel {border:1px solid #e4e8ec;background:#fff;box-shadow:var(--shadow);padding:28px 34px;border-radius:3px;}
+.team-photo {max-width:480px;margin:0 auto 22px;text-align:center;}
+.team-photo img {width:100%;max-height:320px;object-fit:cover;}
+.team-photo figcaption {font-size:11px;color:#717c88;margin-top:5px;}
+.checklist {padding:0;margin:0 auto;list-style:none;width:100%;max-width:1100px;}
+.checklist li {display:flex;gap:13px;align-items:flex-start;font-size:16px;line-height:1.68;color:#556474;margin-bottom:12px;}
+.checklist li:last-child {margin-bottom:0;}
+.checklist .icon {color:#8995a1;width:18px;height:18px;margin-top:4px;}
+
+/* === Áreas de fotos de cada experiência ===
+   Não define aspect-ratio fixo: retratos, panoramas e quadrados cabem.
+   Para adicionar sua foto, substitua o bloco de placeholder por um <img>.
+   A foto existente usa as mesmas regras e não será cortada.
+*/
+.experience-photo {max-width:620px;width:100%;margin:0 auto 24px;text-align:center;}
+.experience-photo img {width:auto;max-width:100%;height:auto;max-height:370px;object-fit:contain;margin-inline:auto;border-radius:4px;box-shadow:0 4px 12px rgba(0,17,35,.1);}
+.experience-photo figcaption {font-size:11px;color:#6b7888;margin:7px 0 0;}
+.experience-photo-placeholder {min-height:135px;border:1.5px dashed #bcc9d5;background:linear-gradient(135deg,#f9fbfd,#f1f5f9);border-radius:5px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;color:#7d8b9b;font-size:13px;font-weight:600;}
+.experience-photo-placeholder .icon {height:27px;width:27px;}
+
+/* Texto das funções acompanha a largura disponível no painel branco,
+   sem limitar os itens a uma coluna estreita. */
+.checklist li span {flex:1;min-width:0;}

@@ -1,0 +1,88 @@
+/* ==============================================================
+   ESTILOS GLOBAIS — Paleta, tipografia, navegação e rodapé.
+   Fontes do sistema: nenhuma solicitação a Google Fonts ou CDNs.
+   ============================================================== */
+:root {
+  --navy: #001123;
+  --navy-soft: #13283d;
+  --wine: #591124;
+  --link: #0f5a95;
+  --bg: #f7f9fb;
+  --white: #fff;
+  --text: #182a3a;
+  --muted: #5c6877;
+  --border: #e1e5e9;
+  --light: #f1f3f5;
+  --shadow: 0 5px 18px rgba(0, 17, 35, .045);
+  --header-height: 69px;
+  --container: 1240px;
+}
+*,*::before,*::after {box-sizing: border-box;}
+html {scroll-behavior: smooth;}
+body {margin: 0;background: var(--bg);color: var(--text);font-family: Arial, Helvetica, sans-serif;line-height: 1.6;}
+a {color: inherit;text-decoration: none;}
+img {max-width: 100%;display: block;}
+button {font: inherit;}
+h1,h2,h3,h4,p {margin-top: 0;}
+button,a { -webkit-tap-highlight-color: transparent;}
+:focus-visible {outline: 3px solid #4795d6;outline-offset: 3px;}
+.container {width: min(var(--container),calc(100% - 44px));margin: 0 auto;}
+.icon {width: 19px;height: 19px;display: inline-block;vertical-align: -4px;flex: none;}
+.btn {display: inline-flex;align-items: center;justify-content: center;gap: 9px;min-height: 42px;padding: 10px 19px;border: 1px solid transparent;border-radius: 3px;font-size: 14px;font-weight: 700;line-height: 1.2;white-space: nowrap;transition: background .2s,color .2s,transform .2s;}
+.btn:hover {transform: translateY(-2px);}
+.btn-navy {background: var(--navy);color: #fff;}
+.btn-navy:hover {background: #12344f;}
+.btn-wine {background: var(--wine);color:#fff;}
+.btn-wine:hover {background:#79203c;}
+.btn-outline {background:transparent;border-color: var(--navy);color:var(--navy);}
+.btn-outline:hover {background:#e8eef3;}
+/* ------------------------- Menu ------------------------------ */
+.site-header {height:var(--header-height);position: sticky;top:0;z-index:100;background:rgba(247,249,251,.97);border-bottom:1px solid #e9edf0;backdrop-filter:blur(10px);}
+.header-inner {height:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;}
+.brand {display:flex;gap:10px;align-items:center;min-width:fit-content;color:var(--navy);font-weight:750;font-size:16px;}
+.logo-wrap {display:grid;place-items:center;width:43px;height:43px;border-radius:50%;background: #fff;overflow:hidden;flex:none;}
+.logo-wrap img {height:100%;width:100%;object-fit: cover;object-position:center;}
+.site-nav {display:flex;align-items:center;gap:28px;height:100%;font-size:13px;font-weight:700;letter-spacing:-.01em;color:#48515d;}
+.site-nav > a {display:flex;align-items:center;height:100%;border-bottom:2px solid transparent;white-space:nowrap;}
+.site-nav > a:hover,.site-nav > a.active {color: var(--navy);border-bottom-color:var(--navy);}
+.site-nav .nav-contact-mobile {display:none;}
+.header-contact {border-radius:8px;font-size:13px;padding-inline:20px;min-height:36px;}
+.menu-toggle {border:0;background:transparent;padding:9px;cursor:pointer;display:none;}
+.menu-toggle span {display:block;background:var(--navy);height:2px;width:23px;margin:5px 0;transition:transform .2s,opacity .2s;}
+/* ---------------------- Títulos e seções ---------------------- */
+.section {padding:66px 0;}
+.internal-main {padding:74px 0 98px;min-height:calc(100vh - var(--header-height) - 165px);}
+.page-intro {margin-bottom:56px;}
+.page-intro h1 {color:var(--navy);font-size:clamp(30px,3.5vw,44px);font-weight:700;letter-spacing:-.025em;line-height:1.17;margin-bottom:14px;}
+.page-intro p {max-width:795px;color:var(--muted);font-size:15px;line-height:1.7;}
+.tag-list {display:flex;flex-wrap:wrap;gap:6px;}
+.tag-list span {font:600 11px/1.5 Consolas,"Courier New",monospace;letter-spacing:.03em;background:#e9ecef;color:#515960;padding:3px 6px;}
+/* -------------------------- Rodapé ---------------------------
+   Aproximação da referência original: assinatura, redes e direitos
+   em uma única linha no desktop; reorganiza-se em telas pequenas.
+   -------------------------------------------------------------- */
+.site-footer {background:#031323;color:#fff;}
+.site-footer > .container {width:min(var(--container),calc(100% - 102px));}
+.footer-inner {min-height:139px;display:flex;justify-content:space-between;align-items:flex-start;gap:28px;padding-top:44px;padding-bottom:32px;}
+.footer-identity {min-width:0;}
+.footer-brand {display:block;font-size:23px;font-weight:400;line-height:1.4;color:#fff;}
+.footer-description {margin:6px 0 0;color:#a7c4e1;font-size:15px;line-height:1.6;}
+.footer-links {display:flex;align-items:center;justify-content:flex-end;gap:19px;flex-wrap:wrap;padding-top:1px;}
+.footer-links a {font-size:12px;font-weight:700;line-height:1.6;color:#a7c4e1;}
+.footer-links a:hover,.footer-bottom a:hover {color:#fff;text-decoration:underline;}
+.site-footer small {font-size:11px;line-height:1.6;color:#86a5c4;}
+/* === Seleção de idioma: bandeiras em SVG local, visíveis em desktop e celular. === */
+.language-switcher {display:flex;align-items:center;gap:7px;flex:none;}
+.language-switcher a {display:inline-flex;align-items:center;justify-content:center;padding:4px;border:1px solid transparent;border-radius:5px;transition:background .2s,transform .2s;}
+.language-switcher a:hover {background:#e8eef3;transform:translateY(-1px);}
+.language-switcher a.is-current {border-color:#91a4b7;background:#e6edf3;}
+.language-switcher img {width:27px;height:18px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.13);}
+/* Link real para #topo, também funciona quando JavaScript está desativado. */
+.footer-bottom {display:flex;justify-content:space-between;align-items:center;gap:16px;border-top:1px solid rgba(255,255,255,.12);padding:14px 0 18px;}
+.back-to-top {display:inline-flex;gap:7px;align-items:center;font-size:11px;font-weight:400;color:#86a5c4;transition:color .2s;white-space:nowrap;}
+.back-to-top:hover {color:#fff;text-decoration:underline;}
+
+/* Títulos internos: menos peso que a versão anterior,
+   preservando destaque e melhorando a legibilidade. */
+.page-projects .page-intro h1,
+.page-courses .page-intro h1 {font-weight:700;letter-spacing:-.02em;}

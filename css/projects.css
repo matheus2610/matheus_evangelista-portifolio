@@ -1,0 +1,20 @@
+/* Página Projetos — cards por especialidade, inteiramente em CSS puro. */
+.project-sections {display:flex;flex-direction:column;gap:46px;}
+.category-title {color:var(--navy-soft);font-size:24px;font-weight:800;border-bottom:1px solid #e0e4e8;padding-bottom:13px;margin-bottom:21px;}
+.project-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:20px;}
+.project-tile {display:flex;flex-direction:column;min-height:225px;border:1px solid #e0e5e9;border-radius:4px;background:#fff;padding:19px;transition:transform .2s,box-shadow .2s;}
+.project-tile:hover {transform:translateY(-3px);box-shadow:0 9px 24px rgba(0,17,35,.075);}
+.project-tile h3 {color:var(--navy);font-size:16px;line-height:1.32;margin-bottom:8px;}
+.project-tile > p {font-size:13px;line-height:1.6;color:#57616d;flex:1;margin-bottom:16px;}
+.project-tile .tag-list {margin-bottom:20px;}
+.repository-link {display:flex;align-items:center;justify-content:center;gap:5px;border:1px solid #536778;font:600 11px/1.1 Consolas,monospace;letter-spacing:.04em;color:var(--navy);padding:5px 8px;transition:color .2s,background .2s;}
+.repository-link:hover {background:var(--navy);color:#fff;}
+.repository-link .icon {width:14px;height:14px;}
+.developer-heading {margin-bottom:-30px;}
+.dev-section-title {display:inline-block;color:#fff;background:var(--navy);font-size:12px;font-weight:750;letter-spacing:.04em;margin:0 0 16px;padding:3px 8px;}
+
+/* === Dois links reais por projeto: GitHub + detalhes locais em preparação. === */
+.project-actions {display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:auto;}
+.project-actions .repository-link,.project-details-link {display:flex;align-items:center;justify-content:center;gap:5px;min-height:33px;padding:7px 5px;border:1px solid #536778;color:var(--navy);font:600 11px/1.2 Consolas,monospace;letter-spacing:0;white-space:normal;text-align:center;transition:background .2s,color .2s;}
+.project-actions .repository-link:hover,.project-details-link:hover {background:var(--navy);color:#fff;}
+.project-actions .icon {width:15px;height:15px;}

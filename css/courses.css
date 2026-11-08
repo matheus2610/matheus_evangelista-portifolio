@@ -1,0 +1,18 @@
+/* Página Certificações — cards de formação, certificados e cursos. */
+.cert-sections {display:flex;flex-direction:column;gap:62px;}
+.cert-section-title {font-size:clamp(22px,2.6vw,30px);font-weight:750;color:#141a22;border-bottom:1px solid #dfe4e8;padding-bottom:12px;margin-bottom:22px;}
+.cert-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+.cert-card {background:white;border:1px solid #e0e4e8;border-radius:5px;padding:20px 19px;box-shadow:var(--shadow);min-height:151px;display:flex;flex-direction:column;position:relative;}
+.cert-top {display:flex;align-items:flex-start;gap:14px;}
+.cert-icon {display:grid;place-items:center;background:#f6f8fa;border:1px solid #edf0f3;width:42px;height:42px;flex:none;}
+.cert-icon .icon {width:21px;height:21px;color:var(--navy);}
+.cert-top h3 {font-size:16px;color:var(--navy);font-weight:650;line-height:1.35;margin:1px 0 3px;}
+.cert-top p {color:#5f6874;font-size:13px;margin:0;}
+.cert-date {display:flex;align-items:center;gap:7px;color:#7e8792;font:500 11px/1.5 Consolas,"Courier New",monospace;letter-spacing:.045em;margin:25px 0 0;}
+.cert-date .icon {width:14px;height:14px;}
+.status-badge {position:absolute;top:13px;right:13px;background:#e1e7ec;font:600 10px/1.4 Consolas,monospace;letter-spacing:.045em;text-transform:uppercase;color:#344150;padding:2px 6px;}
+.status-blue {background:#99c7fe;}
+.cert-planned {border:1px dashed #5ca5ff;}
+.cert-planned .status-badge {background:#b4d7ff;}
+/* Evita colisão entre o selo 'Agendada' e a descrição. */
+.cert-planned .cert-top {padding-top:17px;}

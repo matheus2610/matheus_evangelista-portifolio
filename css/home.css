@@ -1,0 +1,61 @@
+/* Página Início — banner, Sobre Mim e Destaques Profissionais. */
+/* Carrossel: a troca dos slides é realizada exclusivamente pelo JS local. */
+.hero {height:clamp(380px,46vw,560px);position:relative;overflow:hidden;background:var(--navy);color:#fff;}
+.hero-track {height:100%;display:flex;transition:transform .7s cubic-bezier(.23,.65,.32,1);}
+.hero-slide {height:100%;min-width:100%;position:relative;}
+.hero-slide > img {width:100%;height:100%;object-fit:cover;object-position:center 46%;}
+.hero-overlay {position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,12,27,.78) 0%,rgba(0,12,27,.44) 48%,rgba(0,12,27,.22) 100%);}
+.hero-copy {position:absolute;inset:0;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;}
+.eyebrow {font:700 11px/1.5 Consolas,"Courier New",monospace;letter-spacing:.06em;margin-bottom:12px;}
+.hero h1 {font-size:clamp(33px,4.15vw,56px);font-weight:700;letter-spacing:-.035em;line-height:1.12;max-width:760px;margin-bottom:14px;text-shadow:0 2px 15px rgba(0,0,0,.25);}
+.hero-description {max-width:650px;margin-bottom:24px;font-size:16px;}
+/* Botões do carrossel perfeitamente circulares, com SVG centralizado. */
+.carousel-arrow {position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;padding:0;border:1px solid rgba(255,255,255,.32);border-radius:50%;background:rgba(21,37,57,.55);color:white;display:flex;align-items:center;justify-content:center;line-height:1;cursor:pointer;transition:background .2s,border-color .2s;backdrop-filter:blur(4px);}
+.carousel-arrow .icon {display:block;width:21px;height:21px;flex:none;vertical-align:initial;}
+
+.carousel-arrow:hover {background:rgba(255,255,255,.5);}
+.carousel-prev {left:18px;}.carousel-next {right:18px;}
+.carousel-dots {position:absolute;left:50%;bottom:15px;transform:translateX(-50%);display:flex;gap:8px;align-items:center;}
+.carousel-dots button {border:0;cursor:pointer;border-radius:99px;width:22px;height:4px;background:rgba(255,255,255,.45);padding:0;}
+.carousel-dots button.active {background:#fff;width:32px;}
+/* Perfil: fotografia à esquerda, texto à direita (colunas no desktop). */
+.about-layout {display:grid;grid-template-columns:minmax(0, .9fr) minmax(0,1.25fr);align-items:center;gap:38px;}
+.profile-picture {position:relative;margin-right:8px;}
+.profile-picture::before {content:"";position:absolute;inset:-8px 8px 8px -8px;border-radius:4px;background:#d6dade;transform:rotate(-2deg);}
+.profile-picture img {position:relative;width:100%;height:370px;object-fit:cover;object-position:center 38%;border-radius:2px;}
+.about-text h2 {font-size:clamp(26px,3vw,35px);line-height:1.1;color:var(--navy);margin-bottom:26px;}
+.underlined-title::after {content:"";display:block;width:50px;height:3px;margin-top:10px;background:var(--wine);}
+.about-text p {color:#505a65;font-size:15px;line-height:1.75;margin:0;}
+.button-group {display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;}
+/* Destaques: duas colunas e card de projeto com imagem local. */
+.highlights {background:#f1f3f5;}
+.section-center-title {text-align:center;font-size:clamp(25px,3vw,34px);color:var(--navy);margin-bottom:52px;}
+.highlight-grid {display:grid;grid-template-columns:1fr 1fr;gap:30px;}
+.highlight-block {display:flex;flex-direction:column;min-width:0;background:#fff;border:1px solid #dde4eb;border-radius:7px;padding:22px;box-shadow:0 5px 16px rgba(0,17,35,.045);}
+.highlight-heading {font-size:17px;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:12px;border:1px solid #dde4eb;border-radius:5px;background:#f7f9fb;padding:11px 13px;margin-bottom:22px;}
+.highlight-heading .icon {width:35px;height:35px;padding:8px;background:var(--navy);color:#fff;border-radius:5px;}
+.recent-position {position:relative;margin-left:3px;border-left:1px solid #dae0e5;padding:3px 0 0 25px;}
+.recent-position::before {content:"";position:absolute;width:13px;height:13px;background:white;border:1.7px solid var(--navy);border-radius:50%;left:-7px;top:5px;}
+.date-chip {display:inline-block;color:#444d5b;background:#dfe3e8;padding:3px 6px;font:600 11px/1.2 Consolas,monospace;letter-spacing:.05em;}
+.recent-position h4 {font-size:19px;color:var(--navy);line-height:1.3;margin:9px 0 0;}
+.recent-position .minor-title {margin:0 0 9px;}
+.recent-position p {font-size:13px;line-height:1.6;color:#586474;}
+.text-link {display:inline-flex;align-items:center;justify-content:flex-end;gap:5px;color:var(--link);font-weight:650;font-size:14px;margin-top:auto;padding-top:17px;}
+.text-link:hover {text-decoration:underline;}
+.text-link .icon {width:15px;height:15px;}
+.featured-project {background:white;border:1px solid #dfe4e9;border-radius:4px;overflow:hidden;}
+.featured-project > img {width:100%;height:184px;object-fit:cover;}
+.featured-copy {padding:16px 18px 20px;}
+.featured-copy h4 {color:var(--navy);font-size:16px;line-height:1.3;margin-bottom:5px;}
+.featured-copy p {font-size:13px;color:#626d79;margin-bottom:10px;line-height:1.5;}
+
+/* Barra entre as áreas "Sobre Mim" e "Destaques Profissionais".
+   Preserva a divisão visível do layout de referência. */
+.section-divider-band {
+  height:13px;
+  background:linear-gradient(180deg,#e0e5e9,#e9edf1);
+  border-top:1px solid #d9e0e5;
+  border-bottom:1px solid #d9e0e5;
+}
+/* Evita que o cartão de destaque tenha cantos maiores que o pai. */
+.highlight-block .featured-project {border-radius:4px;}

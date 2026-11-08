@@ -1,0 +1,10 @@
+/* Template local para documentação futura dos projetos. */
+.detail-main {display:flex;align-items:center;}
+.detail-layout {width:100%;}
+.detail-back {color:var(--link);font-weight:700;font-size:14px;display:inline-block;margin-bottom:28px;}
+.detail-back:hover {text-decoration:underline;}
+.detail-placeholder {max-width:800px;border:1px solid var(--border);padding:clamp(28px,5vw,66px);background:var(--white);box-shadow:var(--shadow);}
+.detail-badge {display:inline-block;padding:5px 10px;background:#e6ebf0;color:var(--navy);font-size:12px;font-weight:750;margin-bottom:18px;}
+.detail-placeholder h1 {font-size:clamp(30px,4.5vw,46px);color:var(--navy);line-height:1.15;}
+.detail-placeholder p {color:var(--muted);max-width:640px;}
+.detail-placeholder .detail-lead {font-size:18px;font-weight:600;color:var(--text);}
